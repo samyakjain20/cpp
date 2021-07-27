@@ -16,10 +16,10 @@ int minJumps(int arr[], int n){
             maxReach = max(maxReach, i + arr[i]);
             step--;
             if (step == 0) {
-                jump++;
-     
                 if (i >= maxReach) return -1;
-     
+                
+                jump++;
+                
                 // re-initialize the steps to the amount of steps to reach maxReach from position i.
                 step = maxReach - i;
             }
