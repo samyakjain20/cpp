@@ -45,7 +45,6 @@ struct LinkedList {
 	}
 };
 
-/* Driver code*/
 int main(){
 	/* Start with the empty list */
 	LinkedList ll;
