@@ -28,9 +28,7 @@ int eggDrop(int n, int k)
 		for (j = 2; j <= k; j++) {
 			eggFloor[i][j] = INT_MAX;
 			for (x = 1; x <= j; x++) {
-				res = 1 + max(
-							eggFloor[i - 1][x - 1],
-							eggFloor[i][j - x]);
+				res = 1 + max( eggFloor[i - 1][x - 1], eggFloor[i][j - x]);
 				if (res < eggFloor[i][j])
 					eggFloor[i][j] = res;
 			}

@@ -45,9 +45,10 @@ int maxRectangle(int M[MAX][MAX], int n, int m) {
 int main(){
     int r=3,c=3;
     int A[MAX][MAX] = {
-        { 0, 1, 0 },
-        { 1, 0, 1 },
-        { 0, 1, 0 },
+        { 0, 1, 1, 0 },
+        { 1, 1, 1, 1 },
+        { 1, 1, 1, 1 },
+        { 1, 1, 0, 0 },
     };
 
     cout << "Area of maximum rectangle is " << maxRectangle(A,r,c);
